@@ -6,6 +6,9 @@ from savecamera import acquirephoto
 import os
 from pathlib import Path
 
+import winsound
+
+
 # campi fissi
 stanza = 205
 # Create the database or access it.
@@ -41,7 +44,10 @@ choices = {0:'laboratorio_206',
            8:'sala Zamboni_207'}
 
 while True:
-    # mybalance.waiting_forvalue()
+    winsound.Beep(1500, 300)
+    winsound.Beep(1500, 300)
+    print('Aspetto che tu posizioni il bene:')
+    mybalance.waiting_forvalue()
 
     # campo da lettura ettichetta
     now = datetime.utcnow()
@@ -59,15 +65,17 @@ while True:
     campi = etichetta.split(' # ')
     object_ID = int(campi[0])
     destinazione_ID = int(destinazione.split('_')[-1])
-    # peso = int(mybalance.get_average_stablemasurement()*100)
-    
+    print('Peso il manoscritto.')
+    peso = int(mybalance.get_average_stablemasurement()*100)
+    winsound.Beep(2500, 500)
+    print('Bene pesato')
     # confronto peso
     # peso_previsto = modellotermoigrometrico(ID)
     # differenza_peso = peso_attuale - peso_previsto
     # if abs(differenza_peso) > soglia:
     #   print("Peso del bene discosta di %s" %(differenza_peso) 
 
-
+    print("inserisco dati nel database")
 
     query = db.insert(emp).values(Time_stamp=now,
                                   ID_bene=int(object_ID),
@@ -76,8 +84,10 @@ while True:
     ResultProxy = connection.execute(query)
     
     # acquirephoto(path,'Acquire image')
-    # mybalance.waiting_forvalue(autotare=True)
+    print("Rimuovere il bene.")
+    #mybalance.waiting_forvalue(autotare=True)
 
-    print("Bene con ID %s peso (%s g) movimentato verso %s (S. %s) in data %s" %(object_ID,peso,destinazione,destinazione_ID,str(now)))
+    print("Bene con ID %s peso (%s cg) movimentato verso %s (S. %s) in data %s" %(object_ID,peso,destinazione,destinazione_ID,str(now)))
     #print("%s  %s ha movimentato per %s il bene %s ( %s g)  registrato in stanza %s (transito verso %s)" \
     #    %(datetime.utcnow(),operatore,Motivo,object_ID,peso,stanza,destinazione ))
+

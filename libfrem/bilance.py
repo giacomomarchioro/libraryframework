@@ -10,10 +10,13 @@ unloaded.
 
 AUTOPRT PC if YES keeps sending values to the serial port. (must be used 
 for detect_weight_rise(),persistent_stablemasurement(),average_stablemasurement() )
+
+Author: Giacomo Marchioro 
 """
 import serial
 from datetime import datetime
 from collections import deque
+import time
 
 serial_port = '/dev/ttyUSB0'
 class balance:
@@ -34,7 +37,7 @@ class balance:
                            stopbits=1) as ser:
             ser.flushInput()  # maybe should be also output
             print("Start reading from: %s" % (ser.name))
-            ser_line = ser.readline()
+            ser_line =str(ser.readline())
             self.last_read.append(ser_line)
                 
     def write_value(self, command):
@@ -44,21 +47,27 @@ class balance:
                            stopbits=1) as ser:
             ser.flushInput()  # maybe should be also output
             ser.write(command)
-            ser_line = ser.readline()
+            ser_line = str(ser.readline())
             self.last_read.append(ser_line)
             self.last_command.append(command)
+            return ser_line
 
     def stable_weight(self):
-        self.write_value('s')
+        line = str(self.write_value(b's'))
+        time.sleep(1)
+        return line
 
     def tare(self):
-        self.write_value('t')
+        self.write_value(b't')
+        print('Tarata la bilancia')
 
     def weight(self):
-        self.write_value('w')
+        line = str(self.write_value(b'w'))
+        time.sleep(0.5)
+        return line
     
     def convert_line_to_grams(self,ser_line):
-        return float(ser_line[4:-6].strip())
+        return float(ser_line[4:-8].strip())
 
     def waiting_forvalue(self,autotare=False,autotarethreshold=3):
         with serial.Serial(self.serial_port,
@@ -66,7 +75,8 @@ class balance:
                            parity='N',
                            stopbits=1) as ser:
             while True:
-                ser_line = ser.readline()
+                ser_line = str(ser.readline())
+                print(ser_line)
                 if "=Overload=" in ser_line:
                     print("Overload detected")
                     return False
@@ -75,6 +85,7 @@ class balance:
                     continue
                 else:
                     grams = self.convert_line_to_grams(ser_line)
+                    print(grams)
                     if grams < autotarethreshold and autotare:
                         self.tare()
                     return grams
@@ -91,7 +102,7 @@ class balance:
             print("Start reading from: %s" % (ser.name))
             previous_value = start_value
             while True:
-                ser_line = ser.readline()
+                ser_line = str(ser.readline())
                 if "=Overload=" in ser_line:
                     return True
                 if len(ser_line) < 18:
@@ -117,7 +128,7 @@ class balance:
             values = deque(range(consecutivevalues),maxlen=consecutivevalues)
             unstables = 0
             while True:
-                ser_line = ser.readline()
+                ser_line = str(ser.readline())
                 if "=Overload=" in ser_line:
                     return False
                 if len(ser_line) < 18:
@@ -145,7 +156,7 @@ class balance:
             print("Start reading from: %s" % (ser.name))
             values =[]
             while True:
-                ser_line = ser.readline()
+                ser_line = str(ser.readline())
                 if "=Overload=" in ser_line:
                     return False
                 if len(ser_line) < 18:

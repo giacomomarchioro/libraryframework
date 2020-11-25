@@ -1,6 +1,7 @@
 from pyzbar import pyzbar
 import cv2
-
+import winsound
+        
 
 def acquireQR(autoreturn=False):
     vs = cv2.VideoCapture(0)
@@ -38,6 +39,7 @@ def acquireQRandInfo(choices,frase, autoreturn=False,saveimage=False,filename=No
     destinazione = None
     motivazione = None
     status = "Aspetto gli input"
+    first = True
     c = (0,0,255)
     while True:
         _, frame = vs.read()
@@ -55,20 +57,23 @@ def acquireQRandInfo(choices,frase, autoreturn=False,saveimage=False,filename=No
         
         if lastread != 'No QR code found!':
             c = (0,255,0)
+            if first:
+                winsound.Beep(2500, 500)
+                first = False
 
         cv2.putText(frame, lastread, (0,20),
                 cv2.FONT_HERSHEY_SIMPLEX, 0.5, c, 2)
         if destinazione is None:
-            y0, dy = 50, 15
+            y0, dy = 200, 15
             for i in choices:
                 y = y0 + i*dy
                 line = "%s - %s" %(i,choices[i])
-                cv2.putText(frame, line, (850, y ), cv2.FONT_HERSHEY_SIMPLEX,0.5, (0,0,255), 2,)
-            cv2.putText(frame,frase, (800,20),
+                cv2.putText(frame, line, (300, y ), cv2.FONT_HERSHEY_SIMPLEX,0.5, (0,0,255), 2,)
+            cv2.putText(frame,frase, (300,y0 - 15 ),
                 cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,255), 2)
         if destinazione is not None:
             frase = "-> " + destinazione 
-            cv2.putText(frame,frase, (800,20),
+            cv2.putText(frame,frase, (300,y0 - 15),
                 cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2,)
         
         
