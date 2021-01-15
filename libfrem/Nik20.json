@@ -1,0 +1,26 @@
+{
+    camera : {
+        description : "Nikkon D810",
+        link: ".NikonD810.json",
+
+    },
+
+    light_source : {
+        description : "Bowens Flash",
+        link : ".Bowflash.json",
+        distance_from_the_lens_cm: "140",
+        distance_from_the_object_cm:"120" 
+    },
+
+    light_source : {
+        description : "Bowens Flash",
+        link : ".Bowflash.json",
+        distance_from_the_lens_cm: "140",
+        distance_from_the_object_cm:"120" 
+    },
+
+    filter : {
+        description: "UV filter"
+    }
+
+}

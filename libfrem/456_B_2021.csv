@@ -1,0 +1,94 @@
+ID,Elemento,Collation,Period,Written_page_number,Description,Conservative_notes,Requires_analysis,Scanned_byConfiguration,Width_mm,Height_mm,Content,Plannedscan_ProjectID,Online_links
+1,piatto anteriore,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+2,risguardia anteriore,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+3,dorso,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+4,taglio centrale,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+5,taglio di testa,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+6,taglio di piede,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+7,piatto posteriore,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+8,g1r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+9,g2v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+10,g3r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+11,g4v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+12,1r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+13,1v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+14,2r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+15,2v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+16,3r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+17,3v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+18,4r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+19,4v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+20,5r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+21,5v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+22,6r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+23,6v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+24,7r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+25,7v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+26,8r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+27,8v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+28,9r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+29,9v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+30,10r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+31,10v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+32,11r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+33,11v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+34,12r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+35,12v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+36,13r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+37,13v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+38,14r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+39,14v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+40,15r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+41,15v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+42,16r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+43,16v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+44,17r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+45,17v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+46,18r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+47,18v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+48,19r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+49,19v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+50,20r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+51,20v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+52,21r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+53,21v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+54,22r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+55,22v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+56,23r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+57,23v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+58,24r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+59,24v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+60,25r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+61,25v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+62,26r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+63,26v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+64,27r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+65,27v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+66,28r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+67,28v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+68,29r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+69,29v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+70,30r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+71,30v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+72,31r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+73,31v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+74,32r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+75,32v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+76,33r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+77,33v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+78,34r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+79,34v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+80,35r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+81,35v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+82,36r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+83,36v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+84,37r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+85,37v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+86,38r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+87,38v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+88,39r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+89,39v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+90,40r,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+91,40v,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+92,piatto posteriore,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
+93,risguardia posteriore,600,,test,damaged,UV,nik20,200,300,cont,dascabida,wwww.test.it/esdasasdg.jp2
