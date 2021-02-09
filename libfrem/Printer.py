@@ -12,7 +12,7 @@ numero_cod = "I (1)"
 peso = '1234.5'
 titolo = 'Psalterium com caonticis greaco-latinum'
 postazione = '4'
-
+collocazione = 'V III 4'
 ser = serial.Serial(serial_port, baud_rate, parity='N',stopbits=1)
 
 ser.write(b'\x1e         \r\n')
@@ -24,9 +24,11 @@ ser.write(b'         \r\n')
 ser.write(b' Codice  %s \r\n' %numero_cod.encode())
 ser.write(b' %s\r\n' %titolo.encode())
 ser.write(b'         \r\n')
-ser.write(b' Peso: %s g \r\n' %peso.encode())
+ser.write(b' Collocazione: %s \r\n' %collocazione.encode())
+ser.write(b' Peso: %s g Postazione: %s\r\n' %(peso.encode(),postazione.encode()))
 ser.write(b'\x1e         \r\n')
-ser.write(b' Postazione: %s \r\n' %postazione.encode())
+#ser.write(b' Postazione: %s \r\n' %)
+ser.write(b'\x1e         \r\n')
 ser.write(b'\x1e         \r\n')
 ser.write(b'\x1e         \r\n')
 ser.write(b'\x1e         \r\n')

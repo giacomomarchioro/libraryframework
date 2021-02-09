@@ -2,7 +2,6 @@ import sqlalchemy as db
 from datetime import datetime
 from AcquireQR import acquireQRandInfo
 from bilance import balance
-from savecamera import acquirephoto
 import os
 from pathlib import Path
 
@@ -27,6 +26,11 @@ emp = db.Table('movimenti_stanza_%s'%stanza, metadata,
               )
 metadata.create_all(engine) #  Creates the table
 
+imagedir = os.path.join(Path(os.getcwd()),'foto controllo')
+if not os.path.isdir(imagedir):
+    os.mkdir(imagedir)
+    
+
 # operatore
 operatore = 'Giacomo'
 peso = 234.56
@@ -50,10 +54,10 @@ while True:
     mybalance.waiting_forvalue()
 
     # campo da lettura ettichetta
-    now = datetime.utcnow()
-    name = str(now)[:-4]
+    now = datetime.now()
+    name = now.strftime("%Y%m%d%H%M%S")
     # we add the date for assuring is not overwritten
-    imgpath = os.path.join(Path(os.getcwd()).parent,'foto controllo',name)
+    imgpath = os.path.join('foto controllo',name)
     results = acquireQRandInfo(choices=choices,
                                frase='Selezionare destinazione:',
                                saveimage=True,
@@ -62,8 +66,7 @@ while True:
         etichetta,destinazione = results
     else:
         break
-    campi = etichetta.split(' # ')
-    object_ID = int(campi[0])
+    object_ID = int(etichetta[:5])
     destinazione_ID = int(destinazione.split('_')[-1])
     print('Peso il manoscritto.')
     peso = int(mybalance.get_average_stablemasurement()*100)
@@ -80,7 +83,7 @@ while True:
     query = db.insert(emp).values(Time_stamp=now,
                                   ID_bene=int(object_ID),
                                   destinazione=int(destinazione_ID),
-                                  peso_cg=int(peso*100))
+                                  peso_cg=int(peso))
     ResultProxy = connection.execute(query)
     
     # acquirephoto(path,'Acquire image')

@@ -1,6 +1,7 @@
 from pyzbar import pyzbar
 import cv2
 import winsound
+import time
         
 
 def acquireQR(autoreturn=False):
@@ -90,11 +91,13 @@ def acquireQRandInfo(choices,frase, autoreturn=False,saveimage=False,filename=No
             cv2.destroyAllWindows()
             return False
         if k%256 == 32: # spacebar
+            print("pressed sapcebar")
             if destinazione is not None and lastread != 'No QR code found!':
                 if saveimage:
-                    campi = lastread.split(' # ')
-                    object_ID = int(campi[0])
-                    cv2.imwrite("%s_%s.jpeg" %(filename,object_ID), frame)
+                    object_ID = int(lastread[:5])
+                    print('salvo in %s' %(filename))
+                    cv2.imwrite("%s_%s.jpeg"%(filename,object_ID), frame)
+                    time.sleep(1)
                 break
 
     vs.release()
