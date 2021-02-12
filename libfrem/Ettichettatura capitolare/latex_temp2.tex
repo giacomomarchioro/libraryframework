@@ -1,0 +1,104 @@
+\documentclass{minimal}
+\usepackage[utf8]{inputenc}
+\usepackage[paperwidth=210mm,paperheight=297mm,margin=0pt,tmargin=1cm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{xcolor}
+\fboxsep=4mm \fboxrule=1mm
+% normal book
+%\booklabel{742}{[VII A 30]}{DCCXIX}{libro di magia}{green}
+
+\newcommand{\booklabel}[6] {
+\begin{minipage}[t][6.8cm][t]{9.9cm}
+\vspace{.5cm}
+\begin{minipage}[t]{3cm}
+    \includegraphics[width=3cm]{QRcodes/#1}
+\end{minipage}
+\hspace{.3cm}
+\begin{minipage}{5cm}
+    \scalebox{#6}{\textbf{#3}}\\
+    \textbf{COLL.:}#2\\
+    \textsc{\textbf{Rif.Spa.:}} \textsc{#4}\\
+    \textsc{\textbf{STATO:}}\\
+    \vspace{0.4cm}
+    \hfill \fcolorbox{black}{#5!80!white}{\null}
+\end{minipage}
+\vfill
+\textsc{Biblioteca Capitolare di Verona}\\
+\vspace{0.4cm}
+\end{minipage}
+%duplicated
+\begin{minipage}[t][6.8cm][t]{9.9cm}
+\vspace{.5cm}
+\begin{minipage}[t]{3cm}
+    \includegraphics[width=3cm]{QRcodes/#1}
+\end{minipage}
+\hspace{.3cm}
+\begin{minipage}{5cm}
+    \scalebox{#6}{\textbf{#3}}\\
+    \textbf{COLL.:}#2\\
+    \textsc{\textbf{Rif.Spa.:}} \textsc{#4}\\
+    \textsc{\textbf{STATO:}}\\
+    \vspace{0.4cm}
+    \hfill \fcolorbox{black}{#5!80!white}{\null}
+\end{minipage}
+\vfill
+\textsc{Biblioteca Capitolare di Verona}\\
+\vspace{0.4cm}
+\end{minipage}
+
+}
+
+
+
+% dangerous book
+\newcommand{\dangerbooklabel}[5] {
+\begin{minipage}[t][6.8cm][t]{9.9cm}
+    \vspace{.5cm}
+    \begin{minipage}{3cm}
+        \includegraphics[width=3cm]{QRcodes/#1}
+        \begin{center}
+            \includegraphics[width=2cm]{exclam.jpg}
+        \end{center}
+    \end{minipage}
+    \hspace{.3cm}
+    \begin{minipage}{5cm}
+        \textbf{COLLOCAZIONE:} #2\\
+        \textsc{\textbf{CODICE:}}\\
+        #2\\
+        \textsc{\textbf{TITOLO:}}\\
+        \textsc{#3}\\
+        \textsc{\textbf{STATO:}}\\
+        \vspace{0.4cm}
+        \hfill \fcolorbox{black}{#5}{\null}
+    \end{minipage}
+    \vfill
+    \textsc{Biblioteca Capitolare di Verona}\\
+    \vspace{0.4cm}
+\end{minipage}
+%duplicate
+\begin{minipage}[t][6.8cm][t]{9.9cm}
+    \vspace{.5cm}
+    \begin{minipage}{3cm}
+        \includegraphics[width=3cm]{QRcodes/#1}
+        \begin{center}
+            \includegraphics[width=2cm]{exclam.jpg}
+        \end{center}
+    \end{minipage}
+    \hspace{.3cm}
+    \begin{minipage}{5cm}
+        \textbf{COLLOCAZIONE:} #2\\
+        \textsc{\textbf{CODICE:}}\\
+        #3)\\
+        \textsc{\textbf{TITOLO:}}\\
+        \textsc{#4}\\
+        \textsc{\textbf{STATO:}}\\
+        \vspace{0.4cm}
+        \hfill \fcolorbox{black}{#5}{\null}
+    \end{minipage}
+    \vfill
+    \textsc{Biblioteca Capitolare di Verona}\\
+    \vspace{0.4cm}
+\end{minipage}
+}
+\begin{document}
