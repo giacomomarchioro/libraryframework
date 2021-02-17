@@ -1,12 +1,27 @@
+from tkinter.messagebox import RETRY
 from pyzbar import pyzbar
 import cv2
-import winsound
 import time
+import os 
+
+if os.name == 'nt':
+    import winsound
+    def Beep():
+        winsound.Beep(2500, 500)
+        return True
+else:
+    def Beep():
+        print('\007')
+    #cv2.startWindowThread()
+
+
         
 
 def acquireQR(autoreturn=False):
     vs = cv2.VideoCapture(0)
     lastread = 'No QR code found!'
+    cv2.namedWindow("image")
+    first = True
     while True:
         _, frame = vs.read()
         barcodes = pyzbar.decode(frame)
@@ -18,19 +33,33 @@ def acquireQR(autoreturn=False):
             cv2.putText(frame, barcodeData, (x, y - 10),
                 cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
             lastread = barcodeData
+            if first:
+                Beep()
+                first = False
             if autoreturn:
                 break
+                
         
         cv2.putText(frame, lastread, (0,20),
                 cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
-        cv2.imshow("Avvicina il codice QR alla camera (premi ESC per terminare)", frame)
+        cv2.imshow("Avvicina il codice QR alla camera (premi spazio per terminare)", frame)
         k = cv2.waitKey(1) & 0xFF
+
         # if the `ESC` key was pressed, break from the loop
         if k%256 == 27:
+            vs.release()
+            cv2.destroyAllWindows()
+            for i in range (1,5):
+                cv2.waitKey(1)
+            return False
+        if k%256 == 32: # spacebar
+            print("pressed sapcebar")
             break
 
     vs.release()
     cv2.destroyAllWindows()
+    for i in range (1,5):
+        cv2.waitKey(1)
     return lastread
 
 def acquireQRandInfo(choices,frase, autoreturn=False,saveimage=False,filename=None):
@@ -59,7 +88,7 @@ def acquireQRandInfo(choices,frase, autoreturn=False,saveimage=False,filename=No
         if lastread != 'No QR code found!':
             c = (0,255,0)
             if first:
-                winsound.Beep(2500, 500)
+                Beep()
                 first = False
 
         cv2.putText(frame, lastread, (0,20),
@@ -102,4 +131,6 @@ def acquireQRandInfo(choices,frase, autoreturn=False,saveimage=False,filename=No
 
     vs.release()
     cv2.destroyAllWindows()
+    for i in range (1,5):
+        cv2.waitKey(1)
     return (lastread,destinazione)
