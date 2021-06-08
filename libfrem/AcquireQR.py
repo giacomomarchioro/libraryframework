@@ -123,7 +123,7 @@ def acquireQRandInfo(choices,frase, autoreturn=False,saveimage=False,filename=No
             print("pressed sapcebar")
             if destinazione is not None and lastread != 'No QR code found!':
                 if saveimage:
-                    object_ID = int(lastread[:5])
+                    object_ID = lastread[:7]
                     print('salvo in %s' %(filename))
                     cv2.imwrite("%s_%s.jpeg"%(filename,object_ID), frame)
                     time.sleep(1)

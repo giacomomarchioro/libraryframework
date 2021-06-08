@@ -5,3 +5,11 @@ libfrem/.DStore
 libfrem/Ettichettatura capitolare/Latex_soruce/
 
 libfrem/DCCXIX/
+
+*.sqlite
+
+libfrem/registro_movimenti.spec
+
+libfrem/__pycache__/
+
+libfrem/foto controllo/

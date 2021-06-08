@@ -31,6 +31,14 @@ class balance:
         self.last_command = deque(maxlen=linesmemory)
 
     def read_value(self):
+        """
+        It waits for values to be printed ensure AUTOPRINT is yes
+
+        Returns
+        -------
+        None.
+
+        """
         with serial.Serial(self.serial_port,
                            self.baud_rate,
                            parity='N',
