@@ -5,6 +5,8 @@ from datetime import datetime
 import json
 from AcquireQR import acquireQR
 
+
+# os.chdir(r"C:\Users\andre\Dropbox\PC\Desktop\")
 def get_dir(folder):
     try: 
         return len([i for i in os.listdir(os.path.join(os.getcwd(),folder)) if i.endswith('.nef')])
@@ -60,7 +62,7 @@ class UpdateLabel():
         def QRsegn():
             label = acquireQR() #autoreturn
             self.segnatura.delete(0,tk.END)
-            self.segnatura.insert(0,label[5:18+5].strip())
+            self.segnatura.insert(0,label[:7])
 
         def ck(myentry):
             if myentry.get().isdigit():
