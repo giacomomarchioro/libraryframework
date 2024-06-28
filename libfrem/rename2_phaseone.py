@@ -1,3 +1,12 @@
+"""
+Rinomina i file PhaseONE, contenuti nella gerarchia delle cartelle:
+- Dorso e tagli
+- Recto
+- Verso
+- Target
+
+"""
+
 import os
 
 
