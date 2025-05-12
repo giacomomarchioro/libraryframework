@@ -1,0 +1,102 @@
+movements_205.sqlite
+codexstrgen.py
+camera_withQRpyzar.py
+savecamera.py
+rename2_phaseone.py
+ReadMicroclimate.py
+singleiiif2.py
+Controllo_file.py
+registro_movimentiv3.py
+iiifpresentation_template.py
+Nik20.json
+CIEconv
+-  COLORCHEER DIGITAL SG  7
+cxf2txt.py
+rename3CSV_nikkon.py
+Archivio.zip
+registro_movimentiv2.py
+.DS_Store
+rename3CSV_phaseone.py
+climite_S205_BME.sqlite
+newiiifv2.py
+DCCXIX
+-  Target  0
+-  Dorso e tagli  0
+-  Inserti  0
+-  Recto  0
+-  Verso  0
+movimenti_205.sqlite
+test
+-  Target  2
+-  Dorso e tagli  0
+-  Inserti  0
+-  Recto  2
+-  Verso  10
+pesaturamonete.py
+rename2.py
+Untitled.ipynb
+manifest20prezi.py
+tinkerchecker_andstructgen_v4.py
+test_generatore_csv.py
+generatoretabella2.html
+folderStructure.py
+bme680firmware
+m456
+-  Target  0
+-  Dorso e tagli  0
+-  Inserti  0
+-  Recto  0
+-  Verso  0
+tinkerchecker_andstructgen_v4phaseone_controls.py
+lista manoscritti - Versione_con_aggiunte.csv
+sketch_jul02a
+tinkerchecker_andstructgen_v5phaseone_controls.py
+__pycache__
+CreateDB.py
+tinkerchecker_andstructgen_v5.py
+foto controllo
+monete
+-  .virtual_documents  0
+-  .ipynb_checkpoints  1
+tinkerchecker_andstructgen_v2.py
+pesaturamonete205.sqlite
+tracker_acquisizioni.py
+camera.py
+AcquireQR.py
+Ettichettatura capitolare
+-  Latex_soruce  2
+NamingNStructure.py
+bme680firmware_smartvariations
+NikkonD810.json
+rename_visn20.py
+tinkerchecker_andstructgen.py
+tempolavoro.py
+.virtual_documents
+tinkerchecker_andstructgen_v3.py
+tinkerchecker_andstructgen_v3phaseone.py
+.ipynb_checkpoints
+bilance.py
+testx
+-  Target  0
+-  Dorso e tagli  0
+-  Inserti  0
+-  Recto  0
+-  Verso  0
+registro_movimenti.py
+tinkerchecker_andstructgen_v4phaseone.py
+import sqlalchemy as db
+connection_database_movements.py
+Printer.py
+Balance.py
+GUImovements.py
+registro_movimentiv4.py
+jpkconverter.py
+RenamePhaseONERainbow.py
+output.txt
+tinkerchecker.py
+camera_withQR.py
+movetiff.py
+renamederivative.py
+makepapi3d.py
+acquiring_book.py
+stampante.py
